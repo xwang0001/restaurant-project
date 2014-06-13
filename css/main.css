@@ -133,16 +133,22 @@ body {
 	font-family: 'Roboto Condensed', sans-serif;
 	letter-spacing: .2em;
 	font-weight: bold;}
+	
+.nav a {
+	text-decoration: none;
+}
 
 @media screen and (max-width: 768px) {
 	.nav {
-		font-size: 24px;
+		font-size: 20px;
 		padding-top: 10px;
 		padding-bottom: 1px;
 		padding-left: 20px;
 		padding-right: 20px;
 	}
 }
+
+
 
 /*image*/
 .food-img {
@@ -290,6 +296,7 @@ body {
 .container {
 	background-color: #a9e091;
 	padding-top: 20px;
+	padding-bottom: 20px;
 }
 
 /*social*/
