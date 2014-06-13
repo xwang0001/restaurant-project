@@ -201,6 +201,7 @@ body {
 
 /*menu and drink*/
 
+
 .dish-heading,
 .drink-heading {
 	font-family: 'Roboto Condensed', sans-serif;
@@ -286,7 +287,10 @@ body {
 	}
 }
 
-
+.drink-list {
+	margin-top: -5px;
+	padding-top: 5px;
+}
 
 /*whole*/
 
