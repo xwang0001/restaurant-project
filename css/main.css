@@ -212,6 +212,8 @@ body {
 	-webkit-box-shadow: inherit;
 }
 
+
+
 .slides {
 	background-color: rgba(105, 178, 114, 1);
 }
@@ -266,6 +268,19 @@ body {
 	.information-content h3,
 	.direction-content p {
 		font-size: 15px;
+	}
+	
+	.flexslider {	
+		margin-bottom: 30px;
+	}
+	
+	.flex-control-nav {
+		bottom: -30px;
+	}
+	
+	.flex-control-paging li a {
+		width: 9px;
+		height: 9px;
 	}
 	
 }
