@@ -169,19 +169,23 @@ body {
 
 @media screen and (min-width: 480px) {
 	#information-link:hover {
+		color: #fff;
 		background-color: #000;
 	}
 	
 	#drink-link:hover {
+        color: #fff;	
 		background-color: #000;
 	}
 	
 	#food-link:hover {
-		background-color: #000;
+		color: #fff;
+        background-color: #000;
 	}
 	
 	#direction-link:hover {
-		background-color: #000;
+		color: #fff;
+        background-color: #000;
 	}
 }
 
