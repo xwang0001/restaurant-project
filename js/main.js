@@ -1,5 +1,13 @@
+// single line comment
+/*
+	Multiple Line Comment
+	Ever line here is a comment
+*/
+
 $(function (){
 	var accordians = $('.accordian-content');
+	var activeClass = 'is-active';
+	var activeLinks = '.' + activeClass; // ends up being .is-active
 
 	accordians.hide();
 	
@@ -8,7 +16,15 @@ $(function (){
 		
 		event.preventDefault();
 		
-		$(target).toggle();
+		$(activeLinks).removeClass(activeClass);
+		$(this).addClass(activeClass);
+		
+		
+		// this checks whether our target is already visible.
+		// if it is not visible, we show it.
+		// if is is visible, we hide it.
+		accordians.not(target).hide();
+		$(target).toggle(); 
 		
 	});
 });

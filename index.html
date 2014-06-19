@@ -21,6 +21,7 @@
         <link rel="stylesheet" href="css/skeleton.css">
         <link rel="stylesheet" href="css/base.css">
         <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/flexslider.css">
         <link rel="stylesheet" href="css/main.css">
         <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz' rel='stylesheet' type='text/css'>
@@ -34,16 +35,29 @@
     	<div class="container">
     	<header class="site-header">
     		<h1 class="head-brand ir">Parts & Labor</h1>
-    		<div class="food-img">  
-	          <img src="img/1.png" alt="food_picture1">
-	          <img src="img/2.png" alt="food_picture2">
-	          <img src="img/4.png" alt="food_picture3">
-	          <img src="img/5.png" alt="food_picture4">
+    		<div class="food-img">
+    		  <div class=" flexslider">
+				<ul class="slides">
+	                 <li><img src="img/6.png" alt="food_picture1"></li>
+	                 <li><img src="img/7.png" alt="food_picture2"></li>
+	                 <li><img src="img/8.png" alt="food_picture3"></li>
+	                 <li><img src="img/9.png" alt="food_picture4"></li>
+	                 <li><img src="img/10.png" alt="food_picture5"></li>
+	                 <li><img src="img/11.png" alt="food_picture6"></li>
+	                 <li><img src="img/12.png" alt="food_picture7"></li>
+	                 <li><img src="img/13.png" alt="food_picture8"></li>
+				</ul>
+    		  </div>
 	       </div><!--/.food-img-->   
+    	</header>  
+	       
+	       
+	       
+	       
 	       <nav class="nav-direction">
                <ul class="nav">
            	     <li>
-	           	     <a class="accordian-link" href="#directions">
+	           	     <a class="accordian-link" id="direction-link" href="#directions">
 	           	     	DIRECTIONS
 	           	     </a>
            	     </li>
@@ -71,7 +85,7 @@
              <nav class="nav-menu">
                <ul class="nav">
                 <li>
-	                <a class="accordian-link" href="#food">
+	                <a class="accordian-link" href="#food" id="food-link">
 	           	     	MENU
 	           	     </a>
                 </li>
@@ -334,7 +348,7 @@
              <nav class="nav-drinks">
                <ul class="nav">  
                  <li>
-                     <a class="accordian-link" href="#drinks">	           	     	
+                     <a class="accordian-link" id="drink-link" href="#drinks">	           	     	
                       DRINKS
 	           	     </a>
 	           	  </li>
@@ -678,7 +692,7 @@
            <nav class="nav-information">
                <ul class="nav">      
                 <li>     
-                 <a class="accordian-link" href="#information">
+                 <a class="accordian-link" id="information-link" href="#information">
 	           	     	INFORMATION
 	           	     </a>
                 </li>
@@ -716,9 +730,22 @@
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
         
         <!-- Load Jquery Plugins here -->
-        
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
+        
+        <script src="js/vendor/jquery.flexslider-min.js"></script>
+		<script>
+			$(function (){
+			      $('.flexslider').flexslider({
+				      animation: 'slide',
+				      slideshowSpeed: 1000,
+				      pauseOnHover: true
+			      })
+			});
+		</script>
+        
+        
+
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
