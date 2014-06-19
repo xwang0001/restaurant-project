@@ -16,9 +16,14 @@ $(function (){
 		
 		event.preventDefault();
 		
-		$(activeLinks).removeClass(activeClass);
-		$(this).addClass(activeClass);
 		
+
+		if ($(this).hasClass(activeClass)) {
+			$(activeLinks).removeClass(activeClass);
+		} else {
+			$(activeLinks).removeClass(activeClass);
+			$(this).addClass(activeClass);
+		}
 		
 		// this checks whether our target is already visible.
 		// if it is not visible, we show it.
