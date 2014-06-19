@@ -152,17 +152,9 @@ body {
 	background-color: rgba(149, 232, 148, 1);
 }
 
-#direction-link:hover {
-	background-color: #000;
-}
-
 #food-link {
 	background-color: rgba(175, 255, 185, 1);
 	margin-top: 0;
-}
-
-#food-link:hover {
-	background-color: #000;
 }
 
 
@@ -170,22 +162,33 @@ body {
 	background-color: rgba(124, 232, 152, 1);
 }
 
-#drink-link:hover {
-	background-color: #000;
-}
-
 
 #information-link {
 	background-color: rgba(151, 255, 192, 1);
 }
 
-#information-link:hover {
-	background-color: #000;
+@media screen and (min-width: 480px) {
+	#information-link:hover {
+		background-color: #000;
+	}
+	
+	#drink-link:hover {
+		background-color: #000;
+	}
+	
+	#food-link:hover {
+		background-color: #000;
+	}
+	
+	#direction-link:hover {
+		background-color: #000;
+	}
 }
 
 
-.accordian-link:hover, .is-active {
+.accordian-link.is-active {
 	color: #fff;
+	background-color: #000 !important;
 }
 
 .accordian-link:visited, .is-active {
@@ -245,6 +248,14 @@ body {
 	margin-left: 50px;
 	margin-right: 50px;
 	font-family: 'Roboto Condensed', sans-serif;
+}
+
+#information-link {
+	margin-bottom: 0;
+}
+
+.information-content h3:first-child {
+	margin-top: 0;
 }
 
 .information-content h3 {
