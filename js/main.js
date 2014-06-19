@@ -17,7 +17,9 @@ $(function (){
 		event.preventDefault();
 		
 		
-
+		// use jquery's hasClass to check if our link has the
+		// activeClass ('.is-active'). If it does, it removes it.
+		// If it does not, it adds the class.
 		if ($(this).hasClass(activeClass)) {
 			$(activeLinks).removeClass(activeClass);
 		} else {
